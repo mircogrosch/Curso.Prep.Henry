@@ -3,7 +3,7 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
-    return array[0]; 
+    return array[0];  
 }
 
 
@@ -13,12 +13,11 @@ function devolverUltimoElemento(array) {
   return array[array.length-1];
 }
 
-
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
   return array.length;
-}
+} 
 
 
 function incrementarPorUno(array) {
@@ -28,7 +27,7 @@ function incrementarPorUno(array) {
   // Tu código: 
   
   for(var i=0; i<array.length;i++){ 
-    array[i] = array[i] + 1; 
+    array[i] += 1; 
   }
   return array;
 }
@@ -103,7 +102,7 @@ function promedioResultadosTest(resultadosTest) {
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
-  // Tu código:
+  // Tu código: 
   
   var aux= 0; 
   for(let i=0;i<numeros.length;i++){
@@ -120,8 +119,9 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   
-  var resultado =1; 
+  var resultado = 1; 
   if(arguments.length>1){ 
+
     for(let i=0; i<arguments.length;i++){
       resultado *=arguments[i]; 
     }
@@ -140,6 +140,7 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   var cuenta_mayores_18 =0; 
   for(let i=0; i<arreglo.length; i++){
+
     if(arreglo[i]>18){
       cuenta_mayores_18++
     }
@@ -161,7 +162,7 @@ function diaDeLaSemana(numeroDeDia) {
   } else if(dia[numeroDeDia-1]==="Domingo" || dia[numeroDeDia-1]==="Sabado") {
     return "Es fin de semana"
   } else {
-     return "Es dia Laboral"
+     return "Es dia Laboral" 
   }
 
 
@@ -176,16 +177,15 @@ function empiezaConNueve(n) {
     return true;
   } else{
       return false;
-  }
-  
-  
+  } 
 }
 
 
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
-  //Escribe tu código aquí 
+  //Escribe tu código aquí  
+
   var contador=0; 
   for(let i=0; i<arreglo.length;i++) {
 
@@ -209,16 +209,15 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   var meses_seleccionados = []; 
+
   for(let i=0; i<array.length; i++){
     if(array[i]==="Enero" || array[i]==="Marzo" || array[i]==="Noviembre"){
         meses_seleccionados.push(array[i]);
-    } 
-  }  
-  if(meses_seleccionados.length<3){
-    return "No se encontraron los meses pedidos"
-  } else {
-  return meses_seleccionados; 
-  }
+    }
+}
+    if ((!array[i]==="Enero") || (!array[i]==="Marzo") || (!array[i]==="Noviembre") ){ 
+  return "No se encontraron los meses pedidos"
+}  
 } 
 
 
@@ -228,10 +227,12 @@ function mayorACien(array) {
   // Tu código:
   
   var numeros_mayores_100= []; 
-  for(let i=0; i<array.length;i++){ 
+  for(let i=0; i<array.length;i++){
+    
     if(array[i]>100){
       numeros_mayores_100.push(array[i]);
     }
+    
   }
   return numeros_mayores_100;
 }

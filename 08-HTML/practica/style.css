@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+} 
+*{
+    box-sizing: border-box;
+}
+
+header{ 
+    background-color: aqua; 
+    padding: 50px; 
+    text-align: center;
+} 
+.flex{ 
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}  
+aside{ 
+    position: relative;
+    flex: 30px; 
+    background-color: darkkhaki;
+    padding: 20px;
+    align-items: flex-end;
+
+}
+section { 
+     flex: 70%; 
+     padding: 20px;
+     background-color: brown;
+     text-align: center; 
+} 
+aside div{  
+    position: relative;
+    display: flex;
+    background-color: brown; 
+    height: 50px ;
+    margin: 20px;
+}
